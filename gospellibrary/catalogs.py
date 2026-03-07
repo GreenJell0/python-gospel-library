@@ -3,15 +3,8 @@ import requests
 import os
 import sqlite3
 
-try:
-    from urllib.parse import urljoin
-except ImportError:
-    from urlparse import urljoin
-
-try:
-    import lzma
-except ImportError:
-    from backports import lzma
+from urllib.parse import urljoin
+import lzma
 
 DEFAULT_ISO639_3_CODE = 'eng'
 DEFAULT_SCHEMA_VERSION = 'v4'

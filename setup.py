@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='python-gospel-library',
@@ -9,6 +9,5 @@ setup(
     long_description=open('README.md').read(),
     install_requires=[
         'requests>=2.4.3',
-        'backports.lzma>=0.0.13'
     ],
 )
